@@ -11,15 +11,17 @@ int main()
        scanf("%d", &arr[i]);
           }
           
-    j = i - 1;   // j will Point to last Element
-   i = 0;       // i will be pointing to first element
+   // j = i - 1;   // j will Point to last Element
+   //i = 0;       // i will be pointing to first element
               
-    while (i < j) {
-            temp = arr[i];
+//    while (i < j) {
+for(j=i-1,i=0;i<j;i++,j--)
+{	
+   temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-           i++;             // increment i
-           j--;          // decrement j
+ //          i++;             // increment i
+   //        j--;          // decrement j
         }
                                         
       printf("\nResult after reversal : ");
